@@ -1,0 +1,31 @@
+{
+  "name": "proj-string-replace-api",
+  "version": "0.1.0",
+  "description": "API to replace string of characters",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davinaleong/proj-string-replace-api.git"
+  },
+  "keywords": [],
+  "author": "Davina Leong <leong.shi.yun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davinaleong/proj-string-replace-api/issues"
+  },
+  "homepage": "https://github.com/davinaleong/proj-string-replace-api#readme",
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.2"
+  }
+}
