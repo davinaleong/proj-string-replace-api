@@ -1,9 +1,4 @@
-import replace from './replace.function';
-
-const prefixSuffix = {
-    prefix: "prefix",
-    suffix: "suffix"
-};
+const replace = require('./replace.function');
 
 const testCases = [
     {
@@ -11,20 +6,19 @@ const testCases = [
         expect: 'The apple',
         string: 'An apple',
         replace: 'An',
-        with: 'The',
-        prefixSuffix: prefixSuffix.prefix
+        to: 'The'
     }, {
         for: 'Replace "apple" with "apricot"',
         expect: 'An apricot',
         string: 'An apple',
         replace: 'apple',
-        with: 'apricot',
-        prefixSuffix: prefixSuffix.suffix
+        to: 'apricot'
     }
 ];
 
 testCases.forEach(testCase => {
     test(testCase.for, () => {
-        expect(replace(testCase.string, testCase.replace, testCase.with, testCase.prefixSuffix)).toBe(testCase.expect);
+        expect(replace(testCase.string, testCase.replace, testCase.to))
+        .toBe(testCase.expect);
     });
 });
